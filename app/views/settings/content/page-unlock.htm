@@ -1,0 +1,55 @@
+
+<script id="template-settings-page-unlock" type="x-tmpl-mustache">
+  <ignore>
+    <div class="settings-unlock">
+      <p>
+        Thanks for signing up to Snapbits! Unfortunately, the free version has some limitations, but you can get that fixed by<br><strong>sharing it with your friends!</strong>
+        
+      </p>
+      <div class="share-card small facebook {{#shared_fb}}done{{/shared_fb}}">
+        <div class="small-icon-wrapper"><i class="ion-social-facebook-outline"></i></div>
+        <div class="heading-wrapper">
+          <h3>Share on Facebook</h3>
+        </div>
+        <div class="button-wrapper"><i class="ion-ios-checkmark-outline"></i><a href="#" class="share-fb-btn">Share</a></div>
+      </div>
+      <div class="share-card small twitter {{#shared_twitter}}done{{/shared_twitter}}">
+        <div class="small-icon-wrapper"><i class="ion-social-twitter-outline"></i></div>
+        <div class="heading-wrapper">
+          <h3>Share on Twitter</h3>
+        </div>
+        <div class="button-wrapper"><i class="ion-ios-checkmark-outline"></i><a href="https://twitter.com/intent/tweet?url=http://jade-lang.com/reference/code/" class="share-twitter-btn">Share</a></div>
+      </div>
+      <div class="share-card email {{#shared_email}}done{{/shared_email}}">
+        <div class="small-icon-wrapper"><i class="pe-7s-mail"></i></div>
+        <div class="heading-wrapper">
+          <h3>Share with 5 email contacts</h3>
+        </div>
+        <div class="fields-wrapper">
+          <p>
+            Please provide the email addresses of at least five contacts with whom
+            you’d like to share the Snapbits goodness.
+          </p>
+          <div class="email-adresses">
+            <div class="field-group">
+              <input type="email" name="emails[]" value="" placeholder="#1 Email address..."/>
+            </div>
+            <div class="field-group">
+              <input type="email" name="emails[]" value="" placeholder="#2 Email address..."/>
+            </div>
+            <div class="field-group">
+              <input type="email" name="emails[]" value="" placeholder="#3 Email address..."/>
+            </div>
+            <div class="field-group">
+              <input type="email" name="emails[]" value="" placeholder="#4 Email address..."/>
+            </div>
+            <div class="field-group">
+              <input type="email" name="emails[]" value="" placeholder="#5 Email address..."/>
+            </div>
+          </div>
+        </div>
+        <div class="button-wrapper"><i class="ion-ios-checkmark-outline"></i><a href="#" class="disabled share-email-btn">Share</a></div>
+      </div>
+    </div>
+  </ignore>
+</script>

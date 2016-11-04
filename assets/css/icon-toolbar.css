@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'icon-toolbar';
+    src:    url('../fonts/icon-toolbar.eot?kouw65');
+    src:    url('../fonts/icon-toolbar.eot?kouw65#iefix') format('embedded-opentype'),
+        url('../fonts/icon-toolbar.ttf?kouw65') format('truetype'),
+        url('../fonts/icon-toolbar.woff?kouw65') format('woff'),
+        url('../fonts/icon-toolbar.svg?kouw65#icon-toolbar') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icon-toolbar' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-picture:before {
+    content: "\e900";
+}
+.icon-pen:before {
+    content: "\e901";
+}
+

@@ -1,0 +1,39 @@
+
+<script id="template-reminder-editor" type="x-tmpl-mustache">
+  <ignore>
+    <div class="reminder-editor">
+      <div class="reminder-row">
+        <div class="reminder-col">{{setAndDateTime}}</div>
+        <div class="reminder-col">						
+          <div class="date-field">
+            <input type="text" name="time" placeholder="" data-format="date-time" value="{{time}}" class="time"/>
+          </div>
+        </div>
+      </div>
+      <div class="reminder-row">
+        <div class="reminder-col">{{remindMe}}</div>
+        <div class="reminder-col">						
+          <div class="dropdown-field">
+            <select name="reminder" class="reminder">
+              <option value="no" {{#valno}}selected{{/valno}}> {{dontRemindMe}}</option>
+              <option value="on-time" {{#valonTime}}selected{{/valonTime}}> {{onTime}}</option>
+              <option value="10-min" {{#valmin10}}selected{{/valmin10}}> {{before10Min}}</option>
+              <option value="30-min" {{#valmin30}}selected{{/valmin30}}> {{before30Min}}</option>
+              <option value="1-hour" {{#valhr1}}selected{{/valhr1}}> {{before1Hour}}</option>
+              <option value="2-hours" {{#valhr2}}selected{{/valhr2}}> {{before2Hours}}</option>
+              <option value="1-day" {{#valday1}}selected{{/valday1}}> {{before1Day}}</option>
+              <option value="1-week" {{#valweek1}}selected{{/valweek1}}> {{before1Week}}</option>
+              
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="reminder-row hidden">
+        <div class="reminder-col"></div>
+        <div class="reminder-col">
+          <div class="set"><span class="btn-set">Set </span></div>
+        </div>
+      </div>
+    </div>
+  </ignore>
+</script>

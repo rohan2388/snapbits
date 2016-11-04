@@ -1,0 +1,61 @@
+
+<script id="template-timeline-wrapper" type="x-tmpl-mustache">
+  <ignore>
+    <div class="timeline-head">
+      <h1>{{heading}}<a href="#" class="minimize"><span class="pe-7s-less"></span></a></h1>
+    </div>
+    <div class="timeline">
+      <div class="timeline-group"></div>
+    </div>
+  </ignore>
+</script>
+<script id="template-timeline-group" type="x-tmpl-mustache">
+  <ignore>{{#showdate}}
+    <div class="timeline-stamp animate-standby"><span class="timestamp">{{date}}</span></div>{{/showdate}}
+    <div data-date="{{dateClass}}" class="timeline-group {{dateClass}}">{{item}}</div>
+  </ignore>
+</script>
+<script id="template-timeline-item" type="x-tmpl-mustache">
+  <ignore>
+    <div data-post-id="{{id}}" class="timeline-item color-{{color}}{{#lock}} lockable{{^isLocked}} unlocked{{/isLocked}}{{/lock}}{{#uploading}} uploading{{/uploading}}">{{#uploading}}
+      <div class="upload">
+        <div class="upload-progress-bar">
+          <div class="upload-pointer color-{{color}}"></div>
+        </div>
+        <div class="loader">
+          <div class="loading color-{{color}}"></div>
+        </div>
+      </div>{{/uploading}}
+      <div class="content-wrapper {{itemClass}}">{{#hasImage}}
+        <div style="background-image: url('{{imageUrl}}');" class="img-wrapper"></div>{{/hasImage}}
+        <h1 class="title">{{{title}}}</h1>{{^isLocked}}
+        <div class="minimize-wrapper"><span class="timestamp">{{time}}</span>
+          <div class="excerpt">{{{content}}}</div>{{#hasMedia}}
+          <div class="medias">{{#docs}}
+            <div class="doc-viewer"><span class="file-icon"><span class="pe-7s-file"></span></span><span class="title">{{filename}}</span><span class="actions"><a href="{{url}}" class="dl"><span class="pe-7s-download"></span></a><a href="{{viewUrl}}" target="_blank" class="view"><span class="pe-7s-look"></span></a></span></div>{{/docs}}
+            {{#voiceNotes}}
+            <div data-audio-url="{{url}}" class="voice-player"><span class="player-control"><span class="pe-7s-play"></span><span class="pe-7s-power"></span></span><span class="progress-wrapper"><span class="current-time">00:00</span><span class="progress"><span class="progress-pointer">&nbsp;</span></span><span class="total-time">{{totalTime}}</span></span></div>{{/voiceNotes}}
+            {{#reminder}}
+            <div class="doc-viewer remider-viewer"><span class="file-icon"><span class="pe-7s-bell"></span></span><span class="title">{{time}}</span></div>{{/reminder}}
+          </div>{{/hasMedia}}
+        </div>{{/isLocked}}
+        <div class="actions"><span class="edit"></span><span class="remove"></span></div>{{#lock}}
+        <div class="actions left"><span class="lock"><span class="txt">LOCK</span></span></div>{{/lock}}
+      </div>{{^isLocked}}
+      <div class="tags color-{{color}}">
+        {{#hasTags}}
+        {{#tags}}<span class="tag">{{.}}</span>{{/tags}}
+        {{/hasTags}}
+      </div>{{/isLocked}}
+      {{#lock}}
+      {{#isLocked}}
+      <div class="unlocker">
+        <form actions="" method="POST">
+          <input type="password" placeholder="Please enter your password..."/>
+          <button>Submit</button>
+        </form>
+      </div>{{/isLocked}}
+      {{/lock}}
+    </div>
+  </ignore>
+</script>

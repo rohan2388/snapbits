@@ -1,0 +1,25 @@
+
+<script id="template-signup-form" type="x-tmpl-mustache">
+  <div class="signup-form">
+    <h1>Getting started!</h1>
+    <form action="" method="POST">
+      <div class="form-group"><span class="msg"></span>
+        <input type="text" name="username" placeholder="Username..." value=""/>
+      </div>
+      <div class="form-group"><span class="msg"></span>
+        <input type="email" name="email" placeholder="Email..." value=""/>
+      </div>
+      <div class="form-group"><span class="msg"></span>
+        <input type="password" name="password" placeholder="Password..." value="" autocomplete="new-password"/>
+      </div>
+      <div class="submit-group"><span class="msg"></span>
+        <input type="submit" name="signup_submit" value="Sign up"/>
+      </div>
+    </form>
+    <div class="terms">By signing up, I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</div>
+    <div class="form-switch-wrapper">
+      <h3>or</h3>
+      <button data-form="login" class="form-switch">Log in</button>
+    </div>
+  </div>
+</script>

@@ -1,0 +1,39 @@
+{
+	"name": "dezlov/php-paypal-ipn",
+	"description": "A class for handling Instant Payment Notifications (IPN) from PayPal.",
+	"homepage": "https://github.com/dezlov/PHP-PayPal-IPN",
+	"keywords": ["paypal", "ipn", "php"],
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Denis Kozlov",
+			"homepage": "https://github.com/dezlov/",
+			"role": "Current Maintainer"
+		},
+		{
+			"name": "Wade Shuler",
+			"homepage": "https://github.com/WadeShuler/",
+			"role": "Forked Author (up to v2.5.2)"
+		},
+		{
+			"name": "Micah Carrick",
+			"homepage": "https://github.com/Quixotix/",
+			"role": "Original Author (up to v2.1.0)"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/dezlov/PHP-PayPal-IPN/issues",
+		"source": "https://github.com/dezlov/PHP-PayPal-IPN/"
+	},
+	"require": {
+		"php": ">=5.3.0"
+	},
+	"suggest": {
+		"ext-curl": "Network communication library which will enable additional features."
+	},
+	"autoload": {
+		"psr-4": {
+			"dezlov\\PayPal\\": "src/"
+		}
+	}
+}

@@ -1,0 +1,23 @@
+
+<script id="template-settings-plan" type="x-tmpl-mustache">
+  <ignore>
+    <div class="settings-boxes box-your-plan">
+      <h3><i class="pe-7s-key"></i> {{settings_plan}}</h3>
+      <div class="text">
+        <p>{{#isPremium}}{{{settings_plan_premium}}}{{/isPremium}}{{^isPremium}}{{{settings_plan_free}}}{{/isPremium}}</p>
+      </div>
+      <div class="plan-options">{{#isFree}}
+        <div class="plan-options-row">
+          <div class="plan-options-group half"><a href="#settings/subscribe">{{settings_plan_button_premium}}</a></div>
+          <div class="plan-options-group half"><a href="#settings/unlock">{{settings_plan_button_unlock}}</a></div>
+        </div>{{/isFree}}
+        <div class="plan-options-row">{{#isPremium}}
+          <div class="plan-options-group half"><a href="#" class="pause">{{settings_plan_button_pause}}</a></div>{{/isPremium}}
+          {{#isPaused}}
+          <div class="plan-options-group half"><a href="#" class="resume">{{settings_plan_button_resume}}</a></div>{{/isPaused}}
+          <div class="plan-options-group half"><a href="#settings/plans">{{settings_plan_button_selector}}</a></div>
+        </div>
+      </div>
+    </div>
+  </ignore>
+</script>

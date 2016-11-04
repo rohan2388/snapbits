@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Snapbits - Bit Reminder</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style type="text/css">
+      body,html {
+       margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <table cellpadding="0" cellspacing="0" width="100%" class="email-wrapper">
+      <tr>
+        <td width="100%">
+          <table width="600" cellspacing="0" cellpadding="0" border="0" style="background:#e8e9ea" bgcolor="#4384f0" align="center" class="email-body">
+            <tr>
+              <td>
+                <table width="100%" cellpadding="0" cellspacing="0" style="background: #4384f0;" bgcolor="#4384f0">									
+                  <tr>
+                    <td width="40" height="50"><img src="{{@base_url}}assets/email-images/blank.gif"/></td>
+                    <td width="104" height="50"><img src="{{@base_url}}assets/email-images/blank.gif"/></td>
+                    <td width="43" height="50"><img src="{{@base_url}}assets/email-images/blank.gif"/></td>
+                    <td height="50"><img src="{{@base_url}}assets/email-images/blank.gif"/></td>
+                    <td width="40" height="50"><img src="{{@base_url}}assets/email-images/blank.gif"/></td>
+                  </tr>
+                  <tr>
+                    <td width="40"><img src="{{@base_url}}assets/email-images/blank.gif" alt=""/></td>
+                    <td width="104" valign="top" style="vertical-align:top;"><img src="{{@base_url}}assets/email-images/reminder.png" alt="Reminder"/></td>
+                    <td width="43"><img src="{{@base_url}}assets/email-images/blank.gif" alt=""/></td>
+                    <td valign="top" style="vertical-align:top;">
+                      <table>
+                        <tr>
+                          <td>
+                            <h1 style="color:#a3ddff; font-family: 'Arial'; font-size: 24px; font-weight: bold; margin: 0;">{{@email_title}}</h1>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p style="color:#ffffff; font-family: 'Arial'; font-size: 18px; font-weight: normal; margin-top: 0; margin-bottom: 20px;">{{@email_event_time}}</p>
+                          </td>
+                        </tr>
+                        <tr>													 
+                          <td>
+                            <div><!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{@email_bit_url}}" style="height:40px;v-text-anchor:middle;width:130px;" arcsize="0%" stroke="f" fillcolor="#ffffff"><w:anchorlock/>
+                              <center>
+                              <![endif]--><a href="{{@email_bit_url}}" style="background-color:#ffffff;border:0;border-radius:0px;color:#4384f0;display:inline-block;font-family:Arial;font-size:13px;font-weight:normal;line-height:40px;text-align:center;text-decoration:none;width:130px;-webkit-text-size-adjust:none;">View this bit</a><!--[if mso]>
+                              </center>
+                              </v:roundrect>
+                              <![endif]-->
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td width="40"><img src="{{@base_url}}assets/email-images/blank.gif" alt=""/></td>
+                  </tr>
+                  <tr>
+                    <td width="40" height="40"><img src="{{@base_url}}assets/email-images/blank.gif"/></td>
+                    <td width="104" height="40"><img src="{{@base_url}}assets/email-images/blank.gif"/></td>
+                    <td width="43" height="40"><img src="{{@base_url}}assets/email-images/blank.gif"/></td>
+                    <td height="40"><img src="{{@base_url}}assets/email-images/blank.gif"/></td>
+                    <td width="40" height="40"><img src="{{@base_url}}assets/email-images/blank.gif"/></td>
+                  </tr>
+                </table>
+                <table width="100%" height="70" cellpadding="0" cellspacing="0" style="background: #e8e9ea;" bgcolor="#e8e9ea">
+                  <tr>
+                    <td width="40"><img src="{{@base_url}}assets/email-images/blank.gif"/></td>
+                    <td><img src="{{@base_url}}assets/email-images/logo-dark.png" alt="Snapbits logo"/></td>
+                    <td align="right">
+                      <p style="line-height: 45px; vertical-align: middle;margin: 0;"><a href="http://www.snapbits.com" style="vertical-align: middle;font-size: 13px; font-weight: bold; font-family: 'Arial'; color:#4384f0; text-decoration: none;">snapbits.com</a><img src="{{@base_url}}assets/email-images/blank.gif" height="45" width="30" style="vertical-align: middle;"/><a href="#" style="vertical-align: middle;"><img src="{{@base_url}}assets/email-images/icon-facebook.png" alt="Facebook" style="vertical-align: middle;"/></a><img src="{{@base_url}}assets/email-images/blank.gif" height="45" width="30" style="vertical-align: middle;"/><a href="#" style="vertical-align: middle;"><img src="{{@base_url}}assets/email-images/icon-instagram.png" alt="Instagram" style="vertical-align: middle;"/></a><img src="{{@base_url}}assets/email-images/blank.gif" height="45" width="30" style="vertical-align: middle;"/><a href="#" style="vertical-align: middle;"><img src="{{@base_url}}assets/email-images/icon-youtube.png" alt="Youtube" style="vertical-align: middle;"/></a><img src="{{@base_url}}assets/email-images/blank.gif" height="45" width="30" style="vertical-align: middle;"/><a href="#" style="vertical-align: middle;"><img src="{{@base_url}}assets/email-images/icon-linkedin.png" alt="Linkedin" style="vertical-align: middle;"/></a></p>
+                    </td>
+                    <td width="40"><img src="{{@base_url}}assets/email-images/blank.gif"/></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+
+<script id="template-setup-three" type="x-tmpl-mustache">
+  <ignore>
+    <div class="signup-step-content">
+      <div class="container">
+        <div class="step-three">
+          <div class="container-small">
+            <h1><strong>Congrats!</strong> Now you can get started.</h1>
+            <p>Before you get right into it, we’d like to take you through your basic settings. </p>
+          </div>
+          <div class="setup-steps show-first">
+            <div class="arrow-left"><i class="pe-7s-angle-left"></i></div>
+            <div class="arrow-right"><i class="pe-7s-angle-right"></i></div>
+            <div class="nav-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+            <div class="steps-wrapper container-small">
+              <div class="setup-step-pan">
+                <div class="setup-step one">
+                  <h3><i class="pe-7s-key"></i> <span>Choose a password for your <strong>locked bits</strong></span></h3>
+                  <div class="text">
+                    <p>
+                      You can choose a password additional to your login password. This will provide additional security.
+                      if you don't choose another password, your login password will be used by default.
+                    </p>
+                  </div>
+                  <div class="form-wrapper">
+                    <form action="" method="POST">													
+                      <div class="form-group"><span class="msg"></span>
+                        <input type="password" name="password" placeholder="Password..." value=""/>
+                      </div>
+                      <div class="form-group"><span class="msg"></span>
+                        <input type="password" name="password_re" placeholder="Repeat password..." value=""/>
+                      </div>
+                      <div class="form-group"><span class="msg"></span>
+                        <input type="text" name="password_hint" placeholder="Enter a tip to yourself..." value=""/>
+                      </div>
+                      <div class="submit-group"><span class="msg"></span>
+                        <button class="skip">Skip this one</button>
+                        <button class="submit">Save</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="setup-step two">
+                  <h3><i class="pe-7s-bell"></i> Send reminders to</h3>
+                  <div class="text">
+                    <p>
+                      Reminders will be sent to you via email. Please specify the email addresses on which you would
+                      like to be reminded.
+                    </p>
+                  </div>
+                  <div class="form-wrapper">
+                    <div class="form-head">
+                      <p>Send reminders to these email addresses:</p>
+                    </div>
+                    <form action="" method="POST">													
+                      <div class="form-group"><span class="msg"></span>
+                        <input type="text" placeholder="john@gmail.com (prepopulated)" disabled="disabled"/>
+                      </div>
+                      <div class="form-group"><span class="msg"></span>
+                        <input type="text" placeholder="Another email address..." value="" class="email-field"/>
+                      </div>
+                      <div class="submit-group"><span class="msg"></span>
+                        <button class="skip">Skip this one</button>
+                        <button class="submit">Save</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="setup-step three">
+                  <h3><i class="pe-7s-mail"></i> Mail to Snapbits</h3>
+                  <div class="text">
+                    <p>“Email to SnapBits” allows you to send “Bits” from your personal email address. Simply send your “bit” to johnsmith@snapbits.com. You may choose to allow any address to send “bits” to this account by specifying the email addresses here, or for improved security you may choose to only accept mail from one specific email address.</p>
+                  </div>
+                  <div class="form-wrapper">
+                    <div class="form-head">
+                      <p>Accept mail from these email addresses:</p>
+                    </div>
+                    <form action="" method="POST">													
+                      <div class="form-group"><span class="msg"></span>
+                        <input type="text" placeholder="john@gmail.com (prepopulated)" disabled="disabled"/>
+                      </div>
+                      <div class="form-group"><span class="msg"></span>
+                        <input type="text" placeholder="Another email address..." value="" class="email-field"/>
+                      </div>
+                      <div class="submit-group"><span class="msg"></span>
+                        <button class="skip">Skip this one</button>
+                        <button class="submit">Save</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="step-skipper container-small"><a href="#">I'll get to that later...</a></div>
+        </div>
+      </div>
+    </div>
+  </ignore>
+</script>

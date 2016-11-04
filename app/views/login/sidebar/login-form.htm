@@ -1,0 +1,35 @@
+
+<script id="template-login-form" type="x-tmpl-mustache">
+  <ignore>
+    <div class="login-form-wrapper">
+      <h1>{{loginHeading}}</h1>
+      <form action="" method="POST" class="login-form">
+        <div class="form-group"><span class="msg"></span>
+          <input type="text" name="username" placeholder="{{loginUsernamePlaceholder}}" value=""/>
+        </div>
+        <div class="form-group"><span class="msg"></span>
+          <input type="password" name="password" placeholder="{{loginPasswordPlaceholder}}" value="" autocomplete="new-password"/>
+        </div>
+        <div class="submit-group"><span class="msg"></span>
+          <input type="submit" name="login_submit" value="{{loginSubmitButton}}"/>
+        </div>
+      </form>
+      <div class="forgot"><a href="#" class="btn-forgot-passowrd">{{loginForgotPassword}}</a>.</div>
+      <div class="form-switch-wrapper">
+        <h3>{{loginSeparator}}</h3>
+        <button data-form="signup" class="form-switch">{{loginFormSwitch}}</button>
+      </div>
+    </div>
+    <div style="display:none;" class="forgot-form-wrapper">
+      <h1>{{forgotHeading}} <a href="#" class="closeForgotPassword"><span class="pe-7s-close-circle"></span></a></h1>
+      <form action="" method="POST" class="forgot-form">
+        <div class="form-group"><span class="msg"></span>
+          <input type="text" name="username" placeholder="{{forgotUsernamePlaceholder}}" value=""/>
+        </div>
+        <div class="submit-group"><span class="msg"></span>
+          <input type="submit" name="forgot_submit" value="{{forgotSubmitButton}}"/>
+        </div>
+      </form>
+    </div>
+  </ignore>
+</script>

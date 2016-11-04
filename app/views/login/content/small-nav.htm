@@ -1,0 +1,15 @@
+
+<script id="template-samll-nav" type="x-tmpl-mustache">
+  <ignore>{{#signup}}
+    <div class="nav">
+      <div class="nav-wrapper">
+        <ul class="nav-right">
+          <li><a href="#">Terms & Privacy</a></li>
+          <li>{{^signup}}<a href="#" class="login"><strong>Log in</strong></a>{{/signup}}
+            {{#signup}}<a href="#" class="signup"><strong>Sign up</strong></a>{{/signup}}
+          </li>
+        </ul>
+      </div>
+    </div>{{/signup}}
+  </ignore>
+</script>

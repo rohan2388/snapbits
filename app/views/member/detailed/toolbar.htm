@@ -1,0 +1,22 @@
+
+<script id="template-detailed-toolbar" type="x-tmpl-mustache">
+  <ignore>
+    <div class="details-toolbar">
+      <ul class="default">
+        <li><a href="#" class="edit pen"><span class="edit-icon"></span></a></li>
+        <li><a href="#" class="remove"><span class="remove-icon"></span></a></li>
+        <li class="right"><a href="#timeline" class="close"><span class="close-icon pe-7s-close-circle"></span></a></li>
+      </ul>
+      <ul class="edit">
+        <li class="{{^premium}}disabled{{/premium}}"><a href="#" class="recorder"><span class="recorder-icon"></span></a></li>
+        <li class="{{^premium}}disabled{{/premium}}"><a href="#" class="image pic"><span class="image-icon"></span></a></li>
+        <li class="{{^premium}}disabled{{/premium}}"><a href="#" class="doc"><span class="document-icon"></span></a></li>
+        <li><a href="#" class="color"><span class="color-icon"></span></a></li>
+        <li class="{{^premium}}disabled{{/premium}}"><a href="#" class="reminder"><span class="reminder-icon"></span></a></li>
+        <li class="{{^premium}}disabled{{/premium}}"><a href="#" onmouseover="tooltip.pop(this, '{{tooltip_lock}}', {position: 2, maxWidth: 250, offsetY : -20})" class="{{#locked}}active{{/locked}} lock"><span class="lock-icon"></span></a></li>
+        <li class="right"><a href="#" class="save"><span class="save-icon"></span></a></li>
+      </ul>
+    </div>
+    <div class="details-editor-area"></div>
+  </ignore>
+</script>

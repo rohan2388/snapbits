@@ -1,0 +1,51 @@
+
+<script id="template-compose-area" type="x-tmpl-mustache">
+  <ignore>
+    <div class="logo"><img src="./assets/img/compose/logo.png" srcset="./assets/img/compose/logo@2x.png 2x"/></div>
+    <div class="form-wrapper">
+      <form action="" method="POST">
+        <div class="form-group">
+          <input type="text" name="title" placeholder="{{titlePlaceholder}}" required="true" class="field-title"/>
+        </div>
+        <div class="form-group">
+          <textarea name="content" rows="5" placeholder="{{contentPlaceholder}}" required="true" class="field-content"></textarea>
+        </div>
+        <div class="media-group"></div>
+        <div class="media-area"></div>
+        <div class="gallery-area">
+          <ul class="college"></ul>
+        </div>
+        <div class="media-options">
+          <ul class="switch">
+            <li class="{{^premium}}disabled{{/premium}}"><a href="#" data-type="recorder" class="recorder"><span class="recorder-icon"></span></a></li>
+            <li class="{{^premium}}disabled{{/premium}}"><a href="#" data-type="image" class="image"><span class="image-icon"></span></a></li>
+            <li class="{{^premium}}disabled{{/premium}}"><a href="#" data-type="doc" class="doc"><span class="document-icon"></span></a></li>
+            <li><a href="#" data-type="color" class="color"><span class="color-icon"></span></a></li>
+            <li class="{{^premium}}disabled{{/premium}}"><a href="#" data-type="reminder" class="reminder"><span class="reminder-icon"></span></a></li>
+            <li class="{{^premium}}disabled{{/premium}}"><a href="#" data-type="lock" onmouseover="tooltip.pop(this, '{{tooltip_lock}}', {position: 2, maxWidth: 250, offsetY : -20})" class="lock"><span class="lock-icon"></span></a></li>
+          </ul>
+        </div>
+        <div class="editor-area"></div>
+        <div class="tags-group">
+          <input type="text" name="tags" value="" placeholder="{{tagPlaceholder}}" class="field-tags"/><span class="three-dots">• • •</span>
+        </div>
+        <div class="submit-group">
+          <input type="submit" name="submit" value="{{submit}}"/>
+        </div>
+      </form>
+    </div>
+    <footer class="footer-sidebar">
+      <div class="text">
+        <p>© SnapBits 2016</p>
+      </div>
+      <div class="social">
+        <ul>
+          <li><a href="https://twitter.com/stop_forgetting" target="_blank"><span class="fa fa-twitter"></span></a></li>
+          <li><a href="https://www.facebook.com/snapbits.io/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+          <li><a href="https://www.linkedin.com/company/snapbits" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+          <li><a href="https://www.instagram.com/snapbitsapp/?hl=en" target="_blank"><span class="fa fa-instagram"></span></a></li>
+        </ul>
+      </div>
+    </footer>
+  </ignore>
+</script>

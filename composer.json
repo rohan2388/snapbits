@@ -1,0 +1,21 @@
+{
+    "name": "rohan/snapbit",
+    "description": "A website that lets user login and create bits.",
+    "authors": [
+        {
+            "name": "Rohan Das",
+            "email": "rohan23dec@gmail.com"
+        }
+    ],
+    "require": {
+    	"bcosca/fatfree": "3.5.1",
+		"tracy/tracy": "2.4.0",
+		"raveren/kint": "1.0.10",
+        "ikkez/f3-cortex": "1.*",
+        "paragonie/random_compat": "^2.0",
+        "ircmaxell/password-compat": "^1.0",
+        "phpmailer/phpmailer": "^5.2",
+        "wadeshuler/php-paypal-ipn": "*",
+        "dezlov/php-paypal-ipn": "3.0.0"
+    }
+}

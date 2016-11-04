@@ -1,0 +1,94 @@
+
+<script id="template-search-filter" type="x-tmpl-mustache">
+  <ignore><span data-value="{{value}}" class="filter {{class}} filter-tag-id-{{id}}"><span>{{txt}}</span><a href="#" title="Remove"></a></span></ignore>
+</script>
+<script id="template-search-tags" type="x-tmpl-mustache">
+  <ignore>{{#tags}}
+    <li><span data-search-tag="tag:{{.}}">{{.}}</span></li>{{/tags}}
+    {{^tags}}
+    <li><span class="no-tags">{{noTagsFound}}</span></li>{{/tags}}
+  </ignore>
+</script>
+<script id="template-search-bar" type="x-tmpl-mustache">
+  <ignore>
+    <div class="timeline-search">
+      <input type="text" name="search" value="" placeholder="Search..." class="search-field"/>
+      <div class="search-box">
+        <div class="search-box-inner"><span class="placeholder">{{searchPlaceholder}}		</span></div><span class="button pe-7s-search"></span>
+      </div>
+      <div class="search-options">
+        <div class="options-group color-tags">
+          <div class="label-area">
+            <div class="icon"><span class="pe-7s-paint"></span></div>
+            <div class="label">{{colorTags}}</div>
+            <ul class="colors">
+              <li><span data-search-tag="color:fe4556" class="color-icon color-fe4556"><span class="pe-7s-close"></span></span></li>
+              <li><span data-search-tag="color:ff9100" class="color-icon color-ff9100"><span class="pe-7s-close"></span></span></li>
+              <li><span data-search-tag="color:ffce00" class="color-icon color-ffce00"><span class="pe-7s-close"></span></span></li>
+              <li><span data-search-tag="color:5dd8a0" class="color-icon color-5dd8a0"><span class="pe-7s-close"></span></span></li>
+              <li><span data-search-tag="color:58a8e1" class="color-icon color-58a8e1"><span class="pe-7s-close"></span></span></li>
+              <li><span data-search-tag="color:a86ae2" class="color-icon color-a86ae2"><span class="pe-7s-close"></span></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="options-group dropdown my-tags">			
+          <div class="label-area">
+            <div class="icon"><span class="pe-7s-ticket"></span></div>
+            <div class="label">{{myTags}}</div>
+          </div>
+          <div class="dropdown-section">
+            <ul class="tags">
+              <li><span class="no-tags">{{noTagsFound}}</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="options-group dropdown date">				
+          <div class="label-area">
+            <div class="icon"><span class="pe-7s-date"></span></div>
+            <div class="label">{{searchByDate}}</div>
+          </div>
+          <div class="dropdown-section">
+            <div class="date-field">
+              <input type="text" name="date_from" placeholder="{{fromPlaceholder}}" class="from"/>
+            </div><span class="txt">{{to}}</span>
+            <div class="date-field">
+              <input type="text" name="date_to" placeholder="{{toPlaceholder}}" class="to"/>
+            </div>
+          </div>
+        </div>
+        <div class="options-group dropdown advanced">				
+          <div class="label-area">
+            <div class="icon"><span class="pe-7s-lintern"></span></div>
+            <div class="label">{{advancedSearch}}</div>
+          </div>
+          <div class="dropdown-section">
+            <div class="field-group">
+              <div class="field-align">
+                <label for="with_words">{{withAllTheseWords}}</label>
+                <input type="text" name="with_words" id="with_words"/>
+              </div>
+            </div>
+            <div class="field-group">
+              <div class="field-align">
+                <label for="with_exact_phrase">{{withThisExact}}</label>
+                <input type="text" name="with_exact_phrase" id="with_exact_phrase"/>
+              </div>
+            </div>
+            <div class="field-group">
+              <div class="field-align">
+                <label for="with_atleast_words">{{withAtleastOneOfThese}}</label>
+                <input type="text" name="with_atleast_words" id="with_atleast_words"/>
+              </div>
+            </div>
+            <div class="field-group">
+              <div class="field-align">
+                <label for="without_words">{{withoutTheseWords}}</label>
+                <input type="text" name="without_words" id="without_words"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><span class="three-dots">• • •</span>
+    </div>
+  </ignore>
+</script>

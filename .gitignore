@@ -1,0 +1,5 @@
+*.log
+e_log.txt
+tmp/
+uploads/
+*.zip

@@ -1,0 +1,35 @@
+
+<script id="template-detailed-note" type="x-tmpl-mustache">
+  <ignore>
+    <div class="details-note-wrapper">
+      <div data-post-id="{{id}}" data-time="{{reminder.time}}" data-reminder="{{reminder.reminder}}" class="details-note color-{{color}}">
+        <h1 class="title">{{{title}}}</h1><span class="timestamp">{{time}}</span>
+        <div class="content">{{{content}}}</div>
+      </div>
+      <div class="details-media-area">{{#docs}}
+        <div class="doc-viewer"><span class="file-icon"><span class="pe-7s-file"></span></span><span class="title">{{filename}}</span><span class="actions"><a href="{{url}}" class="dl"><span class="pe-7s-download"></span></a><a href="{{viewUrl}}" target="_blank" class="view"><span class="pe-7s-look"></span></a><a href="#" class="delete"><span class="pe-7s-close"></span></a></span></div>{{/docs}}
+        {{#voiceNotes}}
+        <div data-audio-url="{{url}}" class="voice-player"><span class="player-control"><span class="pe-7s-play"></span><span class="pe-7s-power"></span></span><span class="progress-wrapper"><span class="current-time">00:00</span><span class="progress"><span class="progress-pointer">&nbsp;</span></span><span class="total-time">{{totalTime}}</span></span></div>{{/voiceNotes}}
+        {{#reminder}}
+        <div data-time="{{time}}" data-reminder="{{reminder}}" class="doc-viewer remider-viewer"><span class="file-icon"><span class="pe-7s-bell"></span></span><span class="title">{{timetxt}}</span><span class="actions"><a href="#" class="delete"><span class="pe-7s-close"></span></a></span></div>{{/reminder}}
+      </div>
+      <div class="details-gallery">
+        <ul class="college">{{#imgs}}
+          <li><img src="{{src}}" alt=""/><span class="overlay"><span class="pe-7s-close"></span></span></li>{{/imgs}}
+        </ul>
+        <ul class="college-view"></ul>
+      </div>
+      <div class="details-tags color-{{color}}">{{#hasTags}}
+        <div class="tags color-{{color}}">{{#tags}}<span class="tag">{{.}}</span>{{/tags}}</div>{{/hasTags}}
+        <div class="tags-group">
+          <input id="tg" type="text" name="tags" value="" placeholder="Add a tag..." class="field-tags"/><span class="three-dots">• • •</span>
+        </div>
+      </div>
+    </div>
+  </ignore>
+</script>
+<script id="template-details-tags" type="x-tmpl-mustache">
+  <ignore>
+    <div class="tags">{{#tags}}<span class="tag">{{.}}</span>{{/tags}}</div>
+  </ignore>
+</script>
